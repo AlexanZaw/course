@@ -34,7 +34,7 @@ jobs:
     - name: Add SSH key
       uses: webfactory/ssh-agent@v0.5.3
       with:
-        ssh-private-key: ${{ secrets.AWS_SSH_KEY }}
+        ssh-private-key: ${{ secrets.AWS_SSH_KEY }} # test commit
 
     - name: Deploy to EC2 via SSH
       run: |
