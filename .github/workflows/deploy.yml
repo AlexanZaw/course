@@ -1,11 +1,11 @@
 yaml
-Копировать код
+
 name: CI/CD Pipeline
 
 on:
   push:
     branches:
-      - main  # Запуск при пушах у гілку main
+      - main  
 
 jobs:
   build:
