@@ -41,6 +41,6 @@ jobs:
         ssh -o StrictHostKeyChecking=no ${{ secrets.AWS_SSH_USER }}@${{ secrets.AWS_SSH_HOST }} << 'EOF'
           cd /home/ubuntu/cc/course  
           git pull origin main  
-          docker-compose down   
-          docker-compose up --build -d 
+          docker compose down   
+          docker compose up --build -d 
         EOF
